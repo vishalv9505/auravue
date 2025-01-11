@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>auraVue - Adaptive Sunglasses</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">auraVue</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center text-light d-flex align-items-center justify-content-center" style="background-image: url('images/hero_glasses.jpg'); height: 100vh; background-size: cover; background-position: center;">
+        <div class="overlay position-absolute w-100 h-100" style="background: rgba(0, 0, 0, 0.5);"></div>
+        <div class="container position-relative z-2">
+            <h1 class="display-4 fw-bold">Discover the Power of Adaptability</h1>
+            <p class="lead">Introducing auraVue - Sunglasses that seamlessly adapt to light and dark</p>
+            <a href="#features" class="btn btn-primary btn-lg">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <h2 class="fw-bold">Why Choose auraVue?</h2>
+                <p class="text-muted">Experience unparalleled style and technology</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="feature-box">
+                        <img src="images/icon1.jpg" alt="Feature 1" class="mb-3">
+                        <h5>Adaptive Lenses</h5>
+                        <p>Automatically adjusts to changing light conditions.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-box">
+                        <img src="images/icon2.jpg" alt="Feature 2" class="mb-3">
+                        <h5>Stylish Design</h5>
+                        <p>Elegance that fits your personality.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-box">
+                        <img src="images/icon3.jpg" alt="Feature 3" class="mb-3">
+                        <h5>Durable Build</h5>
+                        <p>Built to last with premium materials.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <h2 class="fw-bold">Gallery</h2>
+                <p class="text-muted">See auraVue in action</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <img src="images/auraVue.jpg" alt="auraVue Product" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <img src="images/gallery_image.jpg" alt="Lifestyle" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <h2 class="fw-bold">What Our Customers Say</h2>
+                <p class="text-muted">Real reviews from real users</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="review-box p-4 shadow rounded">
+                        <p>"These sunglasses are a game-changer. Stylish and practical!"</p>
+                        <h6 class="text-muted">- Sarah W.</h6>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="review-box p-4 shadow rounded">
+                        <p>"I love how they adapt to any lighting condition. Highly recommend!"</p>
+                        <h6 class="text-muted">- Mark D.</h6>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="review-box p-4 shadow rounded">
+                        <p>"Durable, elegant, and functional. Everything I needed!"</p>
+                        <h6 class="text-muted">- Emily R.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <h2 class="fw-bold">Get in Touch</h2>
+                <p class="text-muted">We would love to hear from you!</p>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-3 text-center">
+        <p class="mb-0">&copy; 2025 auraVue. All Rights Reserved. | <a href="#" class="text-decoration-none text-primary">Privacy Policy</a></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
